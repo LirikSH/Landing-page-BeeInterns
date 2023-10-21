@@ -1,0 +1,430 @@
+header {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    height: 72px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(216, 216, 216, .1);
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header a {
+    opacity: 60%;
+}
+
+.headerLinkBlock {
+    margin-left: 55px;
+    padding-right: 28px;
+    font-size: 14px;
+    justify-self: flex-start;
+    border-right: 1px solid rgba(216, 216, 216, .1);;
+}
+
+.headerLinkBlock li {
+    margin-left: 28px;
+}
+
+.headerLinkBlock li:first-child {
+    margin: 0;
+}
+
+.headerProfileBlock{
+    font-size: 14px;
+    margin-right: 45px;
+    justify-self: flex-end;
+    display: flex;
+    gap: 10px;
+}
+
+.headerProfileBlock li{
+    align-self: center;
+    height: fit-content;
+    padding: 3px 9px;
+    font-size: 13px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.headerProfileBlock .firstLink {
+    display: flex;
+    gap: 10px;
+}
+
+
+.headerProfileBlock li:nth-child(2) {  
+    display: flex;
+    gap: 10px;
+    padding: 3px 10px 3px 3px ;
+}
+
+.headerProfileBlock div li:nth-child(2) {
+    padding: 3px 9px;
+}
+
+.headerProfileBlock div li:nth-child(2) span  {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+.headerProfileBlock li:nth-child(2) span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+}
+
+.headerProfileBlock li:nth-child(2) span span {
+    font-size: 13px;
+    font-family: "Jost-SemiBold";
+    color: #FFFFFF;
+}
+
+
+
+.icon-1{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    
+    background: #FF4738;
+    box-shadow: 0px 0px 12px rgba(255, 71, 56, 0.5);
+    border-radius: 4px;
+}
+
+.icon-1 img {
+    position: absolute;
+    left: 32%;
+    top: 18%;
+}
+
+.headerProfileBlock li:nth-child(3) {
+    display: flex;
+    background: none;
+    font-size: 14px;
+    gap: 13px;
+    padding: 3px 10px 3px 3px ;
+}
+
+.pro {
+    font-size: 11px;
+    margin-left: 15px;
+    padding: 0 10px;
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    box-shadow: 0px 0px 12px rgba(111, 110, 255, 0.5);
+    border-radius: 4px;
+}
+
+.online {
+    display: flex;
+    align-items: center;
+}
+
+.online div{
+ height: 6px;
+ width: 6px;
+ margin: 0 5px;
+ border-radius: 50%;
+ background-color: #24CB8D;
+}
+
+.online span{
+    font-family: "Jost-SemiBold";
+    color: #24CB8D;
+}
+
+.headerMenu {
+    height: 100vh;
+    max-height: 2160px;
+    width: 280px;
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    box-sizing: border-box;
+
+    background: rgba(156, 165, 236, 0.04);
+    display: grid;
+    grid-template-rows:71px auto auto;
+
+    
+}
+
+.burgerMenu {
+    display: none;
+
+    width: 24px;
+    height: 24px;
+    
+    background: none;
+    background-image: url(../images/header-menu/burgerMenu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.burgerMenu:hover {
+    opacity: 0.6;
+}
+
+.headerMenu img {
+    align-self: end;
+    margin-bottom: 16px;
+    grid-row: 1/2;
+    padding-left: 30px;
+}
+
+.headerMenu div{
+    grid-row: 3/-1;
+    align-self: end;
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px 32px 30px;
+}
+
+.headerMenu ul div {
+    margin: 0;
+}
+
+.headerMenu div span{
+    font-size: 14px;
+    opacity: 60%;
+}
+
+.menuList {
+    height: max-content;
+    text-transform: uppercase;
+    border-top: 1px solid rgba(216, 216, 216, 0.1);
+    border-bottom: 1px solid rgba(216, 216, 216, 0.1);
+    grid-row: 2/3;
+    padding: 28px 30px 28px 30px;
+}
+
+.menuList ul li{
+    height: 40px;
+    margin: 0;
+
+    display: flex;
+    justify-content: flex-start;
+    text-transform: none;
+    gap: 25px; 
+}
+
+.menuList li {
+    margin-bottom: 14px;
+}
+
+.menuList li a{
+    
+    align-self: center;
+}
+
+.menuList li:last-child {
+    margin-bottom: 0;
+}
+
+.menuList button{
+    width: 10px;
+    height: 6px;
+    background: none;
+    align-self: center;
+    background-image: url("../images/header-menu/open-icon.png");
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.secondList {
+    margin: 14px -30px;
+}
+
+.secondList div {
+    width: 48px;
+    box-sizing: border-box;
+    align-self: center;
+    justify-content: flex-end;
+    margin: 0;
+    padding-left: 30px;
+}
+
+.secondList div img {
+    max-width: 18px;
+    margin: 0;
+    padding-left: 0;
+    align-self: center;
+    overflow: hidden;
+}
+
+.secondList li {
+    box-sizing: border-box;
+    font-size: 14px;
+    padding-left: 20px;
+    display: flex;
+}
+
+.secondList li a {
+    opacity: 0.5;
+}
+
+.secondList li:hover{
+    color: #FFFFFF;
+    border-left: 3px solid #6F6EFF;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.03) 93.97%)
+}
+
+.secondList li:hover a{
+    opacity: 1;
+}
+
+.secondList li div:nth-child(2) {
+    display: none;
+}
+
+.secondList li:hover div:nth-child(2)  {
+    display: flex;
+}
+
+.secondList li:hover div:nth-child(1)  {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1180px) {
+    
+    .headerProfileBlock span,
+    .headerLinkBlock li a{
+        font-size: 11.5px;
+    }
+
+    .headerLinkBlock li {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .headerLinkBlock {
+        display: flex;
+        flex-direction: column;
+        padding-right: 18px;
+    }
+
+    .profileIcon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .pro {
+        margin-left: 10px;
+        padding: 0 6px;
+    }
+
+    .menuList li a{
+        font-size: 14px;
+    } 
+
+    
+    .headerMenu div,
+    .secondList li a {
+        font-size: 13px;
+    }
+
+    .headerMenu {
+        max-width: 200px;
+    }
+
+    .beeInternsLogo{
+        height: 30px;
+    }
+
+    .secondList div {
+        width: 38px;
+        padding-left: 22px;
+    }
+
+   .firstLink{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .headerProfileBlock .firstLink li {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .headerMenu {
+        position: relative;
+    }
+    
+    .burgerMenuClose {
+        z-index: 3;
+        background: none;
+        background-image: url(../images/header-menu/burgerMenuClose.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .headerProfileBlock .firstLink,
+    .headerProfileBlock li:nth-child(2),
+    .beeInternsLogo {
+        display: none;
+    }
+    
+    .burgerMenu{
+        z-index: 3;
+        position: absolute;
+        display: block;
+        left: 16px; top: 24px;
+    }
+
+    .invisible810px{
+        display: none;
+    }
+    
+    .visible {
+        display: inherit;
+    }
+
+    .headerMenu {
+        width: max-content;
+        z-index: 2;
+        grid-column: 1/-1;
+        background: rgba(43, 44, 58, 0.85);
+        backdrop-filter: blur(6px);
+    }
+
+}
+
+@media (max-width: 420px) {
+    .lectureHeader .titleBlock h2 {
+        font-size: 10px;
+    }
+    .lectureHeader .titleBlock h1 {
+        font-size: 16px;
+    }
+
+    .lectureHeader .purpleButton{
+        width: 68px;
+        font-size: 11px;
+    }
+
+    .profileIcon {
+        width: 32px;
+        height: 32px;
+        align-self: center;
+    }
+
+    .headerProfileBlock .pro {
+        font-size: 9px;
+        margin-left: 4px;
+    }
+}

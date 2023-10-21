@@ -1,0 +1,177 @@
+.lectureContentBlock {
+       margin: 40px 55px 20px 55px;
+}
+
+.lectureHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.titleBlock h1, h2 {
+ text-transform: uppercase;
+}
+
+.titleBlock h1 {
+    font-size: 22px;
+    line-height: 18px;
+}
+
+.titleBlock h2 {
+    font-size: 11px;
+    line-height: 15.9px;
+    opacity: 40%;
+    
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 42px;
+}
+
+.buttonBlock {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.purpleButton {
+    height: 30px;
+    width: 86px;
+    box-sizing: border-box;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 12px;
+    background: linear-gradient(90deg, #6B69F9 0%, #6F6EFF 100%);
+    border-radius: 4px;
+}
+.purpleButton:focus,
+.purpleButton:hover {
+    background: linear-gradient(90deg, #2e2cbe 0%, #4d4ae0 100%);
+}
+
+.scrollButton {
+    width: 30px;
+    height: 30px;
+    
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    
+    background: none;
+    background-image: url("../images/header-menu/open-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.scrollButton:hover {
+    opacity: 0.5;
+}
+
+.leftButton {
+    transform: rotate(-90deg);
+}
+
+.rightButton {
+    margin-left: -5px;
+    transform: rotate(90deg);
+}
+
+.lectureCard {
+    position: relative;
+    min-width: 255px;
+    max-width: 255px;
+    height: 294px;
+    margin-top: 25px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.04);
+    overflow: hidden;
+}
+
+.lectureImage {
+    width: 255px;
+    height: 144px;
+}
+.lectureImage-01 {
+    background-image: url("../images/cards/card-01.png");
+}
+.lectureImage-02 {
+    background-image: url("../images/cards/card-02.png");
+}
+.lectureImage-03 {
+    background-image: url("../images/cards/card-03.png");
+}
+.lectureImage-04 {
+    background-image: url("../images/cards/card-04.png");
+}
+
+.lectureLabel {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    padding: 2px 6px;
+    font-size: 12px;
+
+    border-radius: 3px;
+    background: rgba(111, 110, 255, 1);
+}
+
+.lectureCard h3, p{
+    margin: 20px 15px 0 15px
+}
+
+.lectureCard h3 {
+    font-size: 16px;
+    line-height: 12px;
+}
+
+.lectureCard p {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.lectureCardFooter {
+    height: 62px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    
+    box-sizing: border-box;
+    border-top: 1px solid rgba(216, 216, 216, 0.1);
+}
+
+.lectureCardFooter span {
+    font-size: 13px;
+}
+
+.lectureCardsSet {
+    width: initial;
+    overflow-x: hidden;
+}
+
+.lectureCardSetInput {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    
+    /* Для прокрутки */
+    position: relative;
+    left:0px;
+    transition: all 1s ease-in-out;  
+}
+
+.proLectureContentBlock {
+    margin-top: 60px;
+}

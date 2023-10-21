@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Kirill Zhuravlev">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Контрольная работа</title>
+    <link href="styles/fonts.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/header.css" rel="stylesheet">
+    <link href="styles/checkbox.css" rel="stylesheet">
+    <link href="styles/content.css" rel="stylesheet">
+    
+</head>
+<body>
+<header>
+    <!-- Кнопка открыти меню при width<810px -->
+    <button class="burgerMenu" onclick=openBurgerMenu()></button>
+    <!-- Блок со ссылками-->
+    <ul class="headerLinkBlock">
+        <li>
+            <a href="#">
+                FAQ
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Поддержка
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                Настройки
+            </a>
+        </li>
+    </ul>
+
+    <!-- Блок с профилем -->
+    <ul class="headerProfileBlock">
+    <div class="firstLink">
+    <li>
+        <span>15 готовых дз</span>
+     </li>
+    <li>
+        <span>18 лекций</span>
+    </li> 
+    </div>
+       
+    
+    
+    <li>
+        <div class="icon-1">
+            <img src="images/header-menu/icon-1.png" alt="Молния">
+        </div>
+        
+        <span><span>1200</span> часов</span>
+    </li>
+    <li>
+        <img class="profileIcon" src="images/profiles/profileImage.png" alt="Аватарка пользователя">
+        <div>
+                <span>Вася Пупкин</span>
+                <span class="pro">PRO</span>
+             <!-- Статус Online -->
+            <div class="online">
+                   <!-- Кружочек -->
+                <div>
+                </div>
+                <span>Online</span> 
+            </div>    
+        </div>
+       
+           
+    </li>   
+    </ul>
+    
+</header>
+
+<!-- Раскрывающийся блок --> 
+    <div class="headerMenu invisible810px">
+        
+        <img class="beeInternsLogo" src="images/header-menu/beeInternslogo.png" alt="Логотип beeInterns 2022">
+        
+        <ul class="menuList"> 
+        <li>
+            <div class="list">
+                <a  href="#">Программа</a>
+                <button class="rotate" id="programms_button"></button>
+            </div>
+
+            <!-- Список программ -->
+                <ul class="secondList invisible">
+                    <li>
+                        <div>
+                            <img src="images/header-list-icons/HTML_CSS.png" alt="Иконка HTML/CSS">
+                        </div>
+                        <div>
+                            <img src="images/header-list-icons/hover/HTML_CSS.png" alt="Иконка HTML/CSS">
+                        </div>
+                        <a href="#">
+                            HTML/CSS
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/header-list-icons/JavaSript.png" alt="Иконка JavaScript">
+                        </div>
+                        <div>
+                            <img src="images/header-list-icons/hover/JavaSript.png" alt="Иконка JavaScript">
+                        </div>
+                        <a href="#"> 
+                            JavaScript
+                        </a>
+                    </li>
+                </ul>
+        </li>
+        <li>
+            <a href="#">Менторы</a>
+        </li>
+        <li >
+            <div class="list">
+                <a href="#">Лекции</a>
+                <button class="rotate" id="lecture_button"></button>
+            </div>
+
+            <!-- Список лекции -->
+                <ul class="secondList invisible">
+                    <li>
+                        <div>
+                            <img src="images/header-list-icons/HTML_CSS.png" alt="Иконка HTML/CSS">
+                        </div>
+                        <div>
+                            <img src="images/header-list-icons/hover/HTML_CSS.png" alt="Иконка HTML/CSS">
+                        </div>
+                        <a href="#">
+                            HTML/CSS
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/header-list-icons/GIT.png" alt="Иконка GIT">
+                        </div>
+                        <div>
+                            <img src="images/header-list-icons/hover/GIT.png" alt="Иконка GIT">
+                        </div>
+                        <a href="#">
+                            GIT
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/header-list-icons/JavaSript.png" alt="Иконка JavaScript">
+                        </div>
+                        <div>
+                            <img src="images/header-list-icons/hover/JavaSript.png" alt="Иконка JavaScript">
+                        </div>
+                        <a href="#"> 
+                            JavaScript
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                           <img src="images/header-list-icons/React.png" alt="Иконка React">                         
+                        </div>
+                        <div>
+                            <img src="images/header-list-icons/hover/React.png" alt="Иконка React">                         
+                         </div>
+                        <a href="#">
+                            React
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                          <img src="images/header-list-icons/Angular.png" alt="Иконка Angular">  
+                        </div>
+                        <div>
+                            <img src="images/header-list-icons/hover/Angular.png" alt="Иконка Angular">  
+                          </div>
+                        <a href="#">
+                            Angular
+                        </a>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="images/header-list-icons/Data.png" alt="Иконка Data">                           
+                        </div>
+                        <div>
+                            <img src="images/header-list-icons/hover/Data.png" alt="Иконка Data">
+                        </div>
+                        <a href="#">
+                            Data
+                        </a>
+                    </li>
+                </ul>
+        </li>
+        <li>
+            <a href="#">Правила поступления</a>
+        </li>
+        <li>
+            <a href="#">Новости</a>
+        </li>
+        <li>
+            <a href="#">Обратная связь</a>
+        </li> 
+        </ul>
+    
+        <div>
+            <span>Получать рассылку</span>
+            <input type="checkbox" class="switch" checked>
+        </div>
+    </div>
+    
+    <div class="content">
+        <!-- Базовый уровень -->
+        <div class="lectureContentBlock baseLectureContentBlock">
+            <div class="lectureHeader">
+                <div class="titleBlock">
+                    <h2>Базовый уровень</h2>
+                    <h1>HTML/CSS</h1>
+                 </div>
+            <div class="buttonBlock">
+                    <a class="purpleButton" href="#">Все лекции</a>
+                    <button class="leftButton scrollButton" onclick="leftMove01()"></button>
+                    <button class="rightButton scrollButton" onclick="rightMove01()"></button>
+            </div>
+            </div>
+
+            <div class="lectureCardsSet">
+            <div class="lectureCardSetInput lectureCardsSet-01" id="lectureCardsSet-01">
+                <!-- Карточка лекции 1-->
+            <div class="lectureCard" data-htmlcss="HTML">
+                <div class="lectureImage lectureImage-01" >
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Структура HTML</h3>
+                <p>Назначение блоков: head, body </p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>01.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+             <!-- Карточка лекции 2 -->
+             <div class="lectureCard" data-htmlcss="CSS">
+                <div class="lectureImage lectureImage-02" >
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Подключение стилей</h3>
+                <p>Виды подключения шрифтов. Подключение шрифтов</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>03.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+             <!-- Карточка лекции 3-->
+             <div class="lectureCard" data-htmlcss="CSS">
+                <div class="lectureImage lectureImage-03" >
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>CSS</h3>
+                <p>Базовый синтаксис CSS: селекторы, классы</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>08.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+             <!-- Карточка лекции 4-->
+             <div class="lectureCard" data-htmlcss="HTML">
+                <div class="lectureImage lectureImage-04">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Наследие и каскад</h3>
+                <p>Наследие и каскад</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>10.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+            <!-- Карточка лекции 5-->
+            <div class="lectureCard" data-htmlcss="HTML">
+                <div class="lectureImage lectureImage-01" >
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Структура HTML</h3>
+                <p>Назначение блоков: head, body</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>01.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+            <!-- Карточка лекции 6 -->
+            <div class="lectureCard" data-htmlcss="CSS">
+                <div class="lectureImage lectureImage-02">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Подключение стилей</h3>
+                <p>Виды подключения шрифтов. Подключение шрифтов</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>03.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+            </div>
+            
+
+
+            </div>
+        </div>
+
+        <!-- Продвинутый уровень -->
+        <div class="lectureContentBlock proLectureContentBlock">
+            <div class="lectureHeader">
+                <div class="titleBlock">
+                    <h2>Продвинутый уровень</h2>
+                    <h1>HTML/CSS</h1>
+                 </div>
+            <div class="buttonBlock">
+                    <a class="purpleButton" href="#">Все лекции</a>
+                    <button class="leftButton scrollButton" onclick="leftMove02()"></button>
+                    <button class="rightButton scrollButton" onclick="rightMove02()"></button>
+            </div>
+            </div>
+
+            <div class="lectureCardsSet scrollTap">
+            <div class="lectureCardSetInput lectureCardsSet-02" id="lectureCardsSet-02">
+                <!-- Карточка лекции 1-->
+            <div class="lectureCard" data-htmlcss="HTML">
+                <div class="lectureImage lectureImage-01">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>HTML-формы</h3>
+                <p>HTML-формы</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>01.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+             <!-- Карточка лекции 2 -->
+             <div class="lectureCard" data-htmlcss="CSS">
+                <div class="lectureImage lectureImage-02">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Flex</h3>
+                <p>Принципы современной вёрстки сайта на flex</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>03.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+             <!-- Карточка лекции 3-->
+             <div class="lectureCard" data-htmlcss="CSS"> 
+                <div class="lectureImage lectureImage-03">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Media и viewport</h3>
+                <p>Адаптивная вёрстка. Использование media и viewport</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>08.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+             <!-- Карточка лекции 4-->
+             <div class="lectureCard" data-htmlcss="CSS">
+                <div class="lectureImage lectureImage-04">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>CSS Grid</h3>
+                <p>CSS Grid</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>10.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+             <!-- Карточка лекции 5-->
+             <div class="lectureCard" data-htmlcss="CSS">
+                <div class="lectureImage lectureImage-04">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>CSS Grid</h3>
+                <p>CSS Grid</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>10.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+            
+            <!-- Карточка лекции 6 -->
+            <div class="lectureCard" data-htmlcss="CSS">
+                <div class="lectureImage lectureImage-02">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Flex</h3>
+                <p>Принципы современной вёрстки сайта на flex</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>03.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+             <!-- Карточка лекции 7-->
+             <div class="lectureCard" data-htmlcss="CSS">
+                <div class="lectureImage lectureImage-03">
+                    <!-- Картинка -->
+                </div>
+                <span class="lectureLabel">Лекция</span>
+                <h3>Media и viewport</h3>
+                <p>Адаптивная вёрстка. Использование media и viewport</p>
+                <!-- Нижний блок -->
+                <div class="lectureCardFooter">
+                    <span>08.02.2022</span>
+                    <button class="purpleButton">Смотреть</button>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+        </div>
+
+            <!-- Продвинутый уровень -->
+            <div class="lectureContentBlock proLectureContentBlock">
+                <div class="lectureHeader">
+                    <div class="titleBlock">
+                        <h2>Продвинутый уровень</h2>
+                        <h1>JavaScript/React</h1>
+                     </div>
+                <div class="buttonBlock">
+                        <a class="purpleButton" href="#">Все лекции</a>
+                        <button class="leftButton scrollButton" onclick="leftMove03()"></button>
+                        <button class="rightButton scrollButton" onclick="rightMove03()"></button>
+                </div>
+                </div>
+    
+                <div class="lectureCardsSet scrollTap">
+                <div class="lectureCardSetInput lectureCardsSet-03" id="lectureCardsSet-03">
+                    <!-- Карточка лекции 1-->
+                <div class="lectureCard" data-jsreact="React">
+                    <div class="lectureImage lectureImage-01">
+                        <!-- Картинка -->
+                    </div>
+                    <span class="lectureLabel">Лекция</span>
+                    <h3>HTML-формы</h3>
+                    <p>HTML-формы</p>
+                    <!-- Нижний блок -->
+                    <div class="lectureCardFooter">
+                        <span>01.02.2022</span>
+                        <button class="purpleButton">Смотреть</button>
+                    </div>
+                </div>
+    
+                 <!-- Карточка лекции 2 -->
+                 <div class="lectureCard" data-jsreact="JavaScript">
+                    <div class="lectureImage lectureImage-02">
+                        <!-- Картинка -->
+                    </div>
+                    <span class="lectureLabel">Лекция</span>
+                    <h3>Flex</h3>
+                    <p>Принципы современной вёрстки сайта на flex</p>
+                    <!-- Нижний блок -->
+                    <div class="lectureCardFooter">
+                        <span>03.02.2022</span>
+                        <button class="purpleButton">Смотреть</button>
+                    </div>
+                </div>
+    
+                 <!-- Карточка лекции 3-->
+                 <div class="lectureCard" data-jsreact="JavaScript">
+                    <div class="lectureImage lectureImage-03">
+                        <!-- Картинка -->
+                    </div>
+                    <span class="lectureLabel">Лекция</span>
+                    <h3>Media и viewport</h3>
+                    <p>Адаптивная вёрстка. Использование media и viewport</p>
+                    <!-- Нижний блок -->
+                    <div class="lectureCardFooter">
+                        <span>08.02.2022</span>
+                        <button class="purpleButton">Смотреть</button>
+                    </div>
+                </div>
+    
+                 <!-- Карточка лекции 4-->
+                 <div class="lectureCard" data-jsreact="React">
+                    <div class="lectureImage lectureImage-04">
+                        <!-- Картинка -->
+                    </div>
+                    <span class="lectureLabel">Лекция</span>
+                    <h3>CSS Grid</h3>
+                    <p>CSS Grid</p>
+                    <!-- Нижний блок -->
+                    <div class="lectureCardFooter">
+                        <span>10.02.2022</span>
+                        <button class="purpleButton">Смотреть</button>
+                    </div>
+                </div>
+    
+                 <!-- Карточка лекции 5-->
+                 <div class="lectureCard" data-jsreact="JavaScript">
+                    <div class="lectureImage lectureImage-04">
+                        <!-- Картинка -->
+                    </div>
+                    <span class="lectureLabel">Лекция</span>
+                    <h3>CSS Grid</h3>
+                    <p>CSS Grid</p>
+                    <!-- Нижний блок -->
+                    <div class="lectureCardFooter">
+                        <span>10.02.2022</span>
+                        <button class="purpleButton">Смотреть</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+
+
+        <!-- Все лекции -->
+        <div class="lectureContentBlock allLectureContentBlock">
+            <div class="lectureHeader">
+                <div class="titleBlock">
+                    <h2>Все лекции на нашем сайте</h2>
+                    <h1>All Lectures</h1>
+                 </div>
+            <div class="buttonBlock">
+                    <a class="purpleButton" href="#" id="htmlButton">HTML</a>
+                    <a class="purpleButton" href="#" id="cssButton">CSS</a>
+                    <a class="purpleButton" href="#" id="jsButton">JavaScript</a>
+                    <a class="purpleButton" href="#" id="lectureTitle"></a>
+
+                    <button class="leftButton scrollButton" onclick="leftMove04()"></button>
+                    <button class="rightButton scrollButton" onclick="rightMove04()"></button>
+            </div>
+            </div>
+
+        <div class="lectureCardsSet">
+            <div class="lectureCardSetInput lectureCardsSet-04" id="lectureCardsSet-04">
+                <div class="lectureCardSetInput inputCards-04">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>  
+        // Открытие и закрытие burgerMenu
+        let headerMenu = document.querySelector(".headerMenu")
+        let burgerMenu = document.querySelector('.burgerMenu')
+        
+        function openBurgerMenu() {
+        if (headerMenu.classList.contains("invisible810px")) {
+            headerMenu.classList.remove("invisible810px")
+            headerMenu.classList.add("visible")
+            burgerMenu.classList.add("burgerMenuClose")
+            
+        }
+        else 
+        {
+            burgerMenu.classList.remove("burgerMenuClose")
+            headerMenu.classList.remove("visible")
+            headerMenu.classList.add("invisible810px")
+        }
+    }
+        
+    </script>
+
+    <script src="scripts/scriptHW-06.js"></script>
+    <script src="scripts/scriptHW-07.js"></script>
+    <script src="scripts/scriptHW-08_01.js"></script>
+    <script src="scripts/scriptHW-08_02.js"></script>
+    <script src="scripts/scriptHW-09.js"></script>
+    <script src="scripts/scriptScroll.js">
+</script>
